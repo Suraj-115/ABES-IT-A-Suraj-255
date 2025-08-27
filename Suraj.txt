@@ -8,3 +8,7 @@ HTML-> HYPERTEXT MARKUP LANGUAGE
 3) body section-> it contains design portion.
 4) title-> Indication of your web page.
 5) tag-> predefined container / structure used for showing some output in web pages.
+6) default size of p tag -> 16px
+7) default size of h1 tag -> 32px
+8) heading is a block tag
+9) 
