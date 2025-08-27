@@ -1,1 +1,10 @@
 We are coder in IT-A
+
+HTML-> HYPERTEXT MARKUP LANGUAGE
+1) Difference between index.html and home.html
+    Index.html is the website's first page which is formed by frontend, backend, and databases
+    home.html is the start page of html and css page i.e. static page 
+2) head section-> it contains links to css etc and titles. 
+3) body section-> it contains design portion.
+4) title-> Indication of your web page.
+5) tag-> predefined container / structure used for showing some output in web pages.
