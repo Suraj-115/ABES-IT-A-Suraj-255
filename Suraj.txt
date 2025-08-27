@@ -11,4 +11,5 @@ HTML-> HYPERTEXT MARKUP LANGUAGE
 6) default size of p tag -> 16px
 7) default size of h1 tag -> 32px
 8) heading is a block tag
-9) 
+9) id and class are selectors that are used in css
+10)  
