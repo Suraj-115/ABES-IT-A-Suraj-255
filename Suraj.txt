@@ -12,4 +12,4 @@ HTML-> HYPERTEXT MARKUP LANGUAGE
 7) default size of h1 tag -> 32px
 8) heading is a block tag
 9) id and class are selectors that are used in css
-10)  
+10)  for in label is for connecting ur tab to label
