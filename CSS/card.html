@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        #container{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+        #card{
+            height: 400px;
+            width: 400px;
+            background-color: aliceblue;
+            border: 3px solid blue;
+            align-items: center;
+            text-align: center;
+        }
+        #card:hover{
+            box-shadow: 5px 5px 15px red;
+            border-radius: 20%;
+        }
+        img{
+            height: 300px;
+            width: 350px;
+            padding: 5px;
+            border-radius: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="card">
+            <img src="burger.png" alt="Burger">
+            <h4>Crispy Veg Burger</h4>
+            <p>Rs.79</p>
+        </div>
+        <div id="card">
+            <img src="pizza.webp" alt="Pizza">
+            <h4>Cheese Onion Topped Pizza</h4>
+            <p>Rs.179</p>
+        </div>
+        <div id="card">
+            <img src="noddle.webp" alt="Noddle">
+            <h4>Veg Noddle</h4>
+            <p>Rs.99</p>
+        </div>
+    </div>
+</body>
+</html>
