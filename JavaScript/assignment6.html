@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        #container{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+        #card1,#card2{
+            height: 400px;
+            width: 400px;
+            background-color: aliceblue;
+            border: 3px solid blue;
+            align-items: center;
+            text-align: center;
+        }
+        #card:hover{
+            box-shadow: 5px 5px 15px red;
+            border-radius: 20%;
+        }
+        img{
+            height: 300px;
+            width: 350px;
+            padding: 5px;
+            border-radius: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="card1">
+            <img id="img1" src="burger.png" alt="Burger">
+            <button onclick="hide()">HIDE</button>
+        </div>
+        <div id="card2">
+            <img id="img2" src="pizza.webp" alt="Pizza">
+            <button onclick="change()">CHANGE</button>
+        </div>
+    </div>
+    <script>
+        function hide(){
+            document.querySelector("#img1").style.display="none";
+        }
+        function change(){
+            document.querySelector("#img2").src="noddle.webp";
+        }
+    </script>
+</body>
+</html>
