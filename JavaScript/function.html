@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        #box{
+            height:200px;
+            width:200px;
+            border:2px solid black;
+            border-radius: 10%;
+            background-color: aliceblue;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <button onclick="abes()">Click</button>
+        <p id="hello"></p>
+    </div>
+    <script>
+        // function abes()
+        // {
+        //     document.write("We are student of abes ");
+        // }
+        // abes();
+        // function add(a,b){
+        //     document.write(a+b+" ");
+        // }
+        // function subtract(a,b){
+        //     document.write(a-b+" ");
+        // }
+        // add(2,3);
+        // subtract(3,1);
+        function abes(){
+            document.getElementById("hello").innerHTML="Hello world";
+        }
+    </script>
+</body>
+</html>
