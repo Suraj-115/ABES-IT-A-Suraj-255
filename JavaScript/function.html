@@ -18,6 +18,9 @@
         <button onclick="abes()">Click</button>
         <p id="hello"></p>
     </div>
+    <button onclick="red()">RED</button>
+    <button onclick="blue()">BLUE</button>
+    <button onclick="green()">GREEN</button>
     <script>
         // function abes()
         // {
@@ -34,6 +37,15 @@
         // subtract(3,1);
         function abes(){
             document.getElementById("hello").innerHTML="Hello world";
+        }
+        function red(){
+             document.querySelector("body").style.backgroundColor="pink";
+        }
+        function blue(){
+             document.querySelector("body").style.backgroundColor="lightblue";
+        }
+        function green(){
+            document.querySelector("body").style.backgroundColor="olive";
         }
     </script>
 </body>
