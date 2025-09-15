@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <style>
+        body{
+            display: flex;
+            margin-top: 200px;
+        }
+        div{
+            height: 400px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 2%;
+            display: flex;
+        }
+        button{
+            height:400px;
+            width:100px;
+        }
+        #sa{
+            background-color: pink;
+        }
+        #re{
+            background-color:aliceblue;
+        }
+        #ga{
+            background-color: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="sa" onclick="sa()">SA</button>
+        <button id="re" onclick="re()">RE</button>
+        <button id="ga" onclick="ga()">GA</button>
+    </div>
+    <script>
+        function sa(){
+            let audio = new Audio("sound.mp3"); // replace with your audio file path
+            audio.play();
+        }
+        function re(){
+            let audio = new Audio("sound.mp3"); // replace with your audio file path
+            audio.play();
+        }
+        function ga(){
+            let audio = new Audio("sound.mp3"); // replace with your audio file path
+            audio.play();
+        }
+    </script>
+</body>
+</html>
