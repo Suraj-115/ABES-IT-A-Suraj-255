@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        
+        #student1,#student2{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="student1">
+        </div>
+        <div  id="student2">
+        </div>
+    </div>
+    <script>
+        // const cars=["tata ","maruti ","range rover "];
+        // document.getElementById("arr").innerHTML=cars;
+        // const car=new Array("tata1 ","maruti1 ","range rover1");
+        // document.getElementById("arr").innerHTML +=car;
+        // document.getElementById("arr").innerHTML +=cars[0];
+        // const person ={
+        //     firstname:"Suraj",
+        //     lastname:"Agarwal"
+        // }
+        const student_data={
+            student1:{
+                name:"Suraj",
+                roll:255,
+                branch:"IT-A"
+            },
+            student2:{
+                name:"Suraj",
+                roll:255,
+                branch:"IT-A"
+            },
+            student4:{
+                name:"Suraj",
+                roll:255,
+                branch:"IT-A"
+            },
+            student4:{
+                name:"Suraj",
+                roll:255,
+                branch:"IT-B"
+            },
+            student5:{
+                name:"Suraj",
+                roll:255,
+                branch:"IT-B"
+            }
+        }
+        for(var student of student_data){
+            if(student.branch == "IT-A"){
+                document.getElementById("student1").innerHTML+=`${student.name} ${student.roll} ${student.branch} <br>`;
+            }
+            else{
+                document.getElementById("student2").innerHTML+=`${student.name} ${student.roll} ${student.branch} <br>`;
+            }
+        }
+    </script>
+</body>
+</html>
