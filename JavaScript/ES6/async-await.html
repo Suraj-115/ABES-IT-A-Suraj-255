@@ -7,11 +7,14 @@
 </head>
 <body>
     <script>
-        function f(){
+        async function f(){
             let promise = new promise(()=>{
                 setTimeout(()=> resolve("done"),2000);
             });
+            let result = await promise;
+            alert(result);
         }
+        f();
     </script>
 </body>
 </html>
