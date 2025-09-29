@@ -6,6 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+    const mypromise = new Promise((resolve, reject) => {
+        const pass = "sa345678@321";
+        if (pass.length > 8) {
+            resolve("Password length is ok");
+        } else {
+            reject("Password is shorter");
+        }
+    });
+    console.log(mypromise);
+
+    mypromise
+        .then(message => console.log("Success:", message))
+        .catch(error => console.log("Error:", error))
+        .finally(()=>{
+            console.log("HII");
+        });
+</script>
 </body>
 </html>
