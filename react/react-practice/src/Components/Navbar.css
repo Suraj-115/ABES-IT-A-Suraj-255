@@ -1,8 +1,6 @@
 #nav{
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: aliceblue;
-    align-items: center;
-    /* text-align: center; */
     border: 2px solid black;
 }

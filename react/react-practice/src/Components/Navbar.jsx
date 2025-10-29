@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Navbar.css";
-function Navbar() {
+function Navbar(props) {
   return (
     <div id="nav">
-      <p>HOME</p>
+      <h2>{props.college}</h2>
     </div>
   )
 }

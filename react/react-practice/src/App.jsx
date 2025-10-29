@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar'
 function App() {
   return (
     <>
-    <Navbar/>
+      <Navbar college="ABESEC"/>
       <br />
       <Card name="Suraj" age={18}/>
       <br />
