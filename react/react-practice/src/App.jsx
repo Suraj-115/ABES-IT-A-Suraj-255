@@ -6,9 +6,11 @@ function App() {
     <>
     <Navbar/>
       <br />
-      <Card/>
+      <Card name="Suraj" age={18}/>
       <br />
-      <Card/>
+      <Card name="Shyam" age={20}/>
+      <br />
+      <Card name="Agarwal" age={21}/>
     </>
   )
 }
