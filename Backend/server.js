@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require("cors");
 const app=express();
-const port=5000;
+app.use(cors()); //application level middleware
+const port=8080;
 
 //route
 app.get('/',(req,res)=>{
@@ -11,28 +13,33 @@ app.get('/about',(req,res)=>{
     const student= [
         {
             id:1,
-            name:'suraj',
-            class:'btech'
+            name:'Suraj',
+            class:'btech',
+            image:"https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
         },
         {
             id:2,
-            name:'suraj2',
-            class:'btech'
+            name:'Raj',
+            class:'btech',
+            image:"https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
         },
         {
             id:3,
-            name:'suraj3',
-            class:'btech'
+            name:'Shyam',
+            class:'btech',
+            image:"https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
         },
         {
             id:4,
-            name:'suraj4',
-            class:'btech'
+            name:'Gopal',
+            class:'btech',
+            image:"https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
         },
         {
             id:5,
-            name:'suraj5',
-            class:'btech'
+            name:'SurajAg',
+            class:'btech',
+            image:"https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg"
         }
     ];
     res.json(student);
