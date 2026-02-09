@@ -26,6 +26,39 @@ const fs = require('fs');
 // fs.writeFileSync("./abes.txt","We are students of ABESEC");
 // const result = fs.readFileSync("./abes.txt","utf-8");
 // console.log(result);
-fs.writeFile("./user2.txt","This is the great Suraj Agarwal here.",()=>{
+// fs.writeFile("./user2.txt","This is the great Suraj Agarwal here.",()=>{
 
+// });
+// fs.readFile("./abes.txt","utf-8",(err,data)=>{
+//   if(err){
+//     console.log(err);  
+//   }
+//   else{
+//     console.log(data);
+//   }
+// });
+
+// fs.appendFileSync("./abes.txt"," We are from IT-A.");
+// fs.appendFile("./user.txt"," We are from IT.",(err)=>{
+//   if(err){
+//     console.log(err);
+//   }  else{
+//     console.log("Data appended successfully");
+//   }
+// });
+// fs.appendFile("./user2.txt","Hello World!!!",()=>{
+
+// });
+
+// fs.writeFile("./a.txt","Hello World!!!",()=>{
+
+// });
+
+// fs.cpSync("./a.txt","./b.txt");\
+fs.cp("./a.txt","./abes.txt",(err)=>{
+  if(err){
+    console.log(err);
+  }else{
+    console.log("File copied successfully");
+  }
 });
