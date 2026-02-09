@@ -23,7 +23,9 @@
 // myserver.listen(5000,()=>{console.log("Server is running")});
 
 const fs = require('fs');
-// fs.writeFileSync("./user.txt","This is the great Suraj Agarwal here.");
 // fs.writeFileSync("./abes.txt","We are students of ABESEC");
-const result = fs.readFileSync("./abes.txt","utf-8");
-console.log(result);
+// const result = fs.readFileSync("./abes.txt","utf-8");
+// console.log(result);
+fs.writeFile("./user2.txt","This is the great Suraj Agarwal here.",()=>{
+
+});
