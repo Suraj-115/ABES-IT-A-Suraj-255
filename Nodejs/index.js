@@ -55,10 +55,19 @@ const fs = require('fs');
 // });
 
 // fs.cpSync("./a.txt","./b.txt");\
-fs.cp("./a.txt","./abes.txt",(err)=>{
+// fs.cp("./a.txt","./abes.txt",(err)=>{
+//   if(err){
+//     console.log(err);
+//   }else{
+//     console.log("File copied successfully");
+//   }
+// });
+
+// fs.unlinkSync("./a.txt");
+fs.unlink("./user2.txt",(err)=>{
   if(err){
     console.log(err);
-  }else{
-    console.log("File copied successfully");
+  } else {
+    console.log("File deleted successfully");
   }
 });
