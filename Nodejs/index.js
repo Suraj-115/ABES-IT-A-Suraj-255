@@ -22,7 +22,9 @@
 // });
 // myserver.listen(5000,()=>{console.log("Server is running")});
 
+
 const fs = require('fs');
+
 // fs.writeFileSync("./abes.txt","We are students of ABESEC");
 // const result = fs.readFileSync("./abes.txt","utf-8");
 // console.log(result);
@@ -64,10 +66,27 @@ const fs = require('fs');
 // });
 
 // fs.unlinkSync("./a.txt");
-fs.unlink("./user2.txt",(err)=>{
-  if(err){
-    console.log(err);
-  } else {
-    console.log("File deleted successfully");
-  }
+// fs.unlink("./user2.txt",(err)=>{
+//   if(err){
+//     console.log(err);
+//   } else {
+//     console.log("File deleted successfully");
+//   }
+// });
+
+// fs.readFile('abes.json', 'utf8', (err, data) => {
+//     if (err) throw err;
+
+//     const jsonData = JSON.parse(data); //Convert string → object
+//     console.log(jsonData);
+// });
+
+const newData ={
+  name: "Suraj Agarwal",
+  age: 20,
+  skills : ["MERN" , "DSA"]
+};
+fs.appendFile("abes.json",JSON.stringify(newData,null,2),(err) =>{
+  if(err) throw err;
+  console.log("Data written successfully");
 });
